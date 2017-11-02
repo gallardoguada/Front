@@ -10,6 +10,7 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactanosComponent } from './contactanos/contactanos.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { InformacionsidebarComponent } from './informacionsidebar/informacionsidebar.component';
+import { InicioComponent } from './inicio/inicio.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InformacionsidebarComponent } from './informacionsidebar/informacionsid
     ProyectosComponent,
     ContactanosComponent,
     InformacionComponent,
-    InformacionsidebarComponent
+    InformacionsidebarComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
