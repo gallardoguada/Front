@@ -24,6 +24,20 @@
             <h5>Desarrolladores:</h5>
             <p>{{proyecto.desarrolladores}}</p>
             <h5>Galeria:</h5>
+            <ngb-carousel class="col-12">
+                <ng-template ngbSlide>
+                    <img src="https://lorempixel.com/900/500?r=1" alt="Random first slide">
+                    
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <img src="https://lorempixel.com/900/500?r=2" alt="Random second slide">
+                      
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <img src="https://lorempixel.com/900/500?r=3" alt="Random third slide">
+                      
+                    </ng-template>
+                  </ngb-carousel>
             <h5>Descarga:</h5>
             <p><a href=''>{{proyecto.descarga}}</a></p>
         </div>
