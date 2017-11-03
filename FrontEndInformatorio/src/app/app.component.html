@@ -1,13 +1,12 @@
-<app-navbar></app-navbar>
+<app-navbar (mensajeDelHijo)="metodoMensajePadre($event)"></app-navbar>
 <div class="container">
   <div class="row">
-    <div class="col-2 p-0 bg-white shad-inf"><app-informacionsidebar></app-informacionsidebar></div>
-    <div class="col-10 p-0"><app-informacion></app-informacion>
-    <app-contactanos></app-contactanos></div>
-    <div class="col-12"><app-inicio></app-inicio></div>
-
     
+    <div class="col-12 p-0" >
+      <app-informacion *ngIf="title == 'informacion'"></app-informacion>
+      <app-formulario-contacto *ngIf="title == 'formulario'"></app-formulario-contacto> 
+      <app-inicio *ngIf="title == 'proyectos'"></app-inicio>
+    </div>
   </div>
-  
 </div>
 <app-footer></app-footer>

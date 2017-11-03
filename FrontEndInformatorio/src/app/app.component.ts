@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Informatorio 2017';
+
+  metodoMensajePadre(mensaje){
+    this.title = mensaje;
+    console.log(this.title);
+  }
 }

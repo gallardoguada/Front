@@ -2,13 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselModule } from 'angular4-carousel';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ProyectosComponent } from './proyectos/proyectos.component';
-import { ContactanosComponent } from './contactanos/contactanos.component';
+import { NavbarComponent } from './navbar/navbar.component'; 
+import { FormularioContactoComponent } from './formulario-contacto/formulario-contacto.component';
 import { InformacionComponent } from './informacion/informacion.component';
+import { CarouselComponent } from './carousel/carousel.component';
 import { InformacionsidebarComponent } from './informacionsidebar/informacionsidebar.component';
 import { InicioComponent } from './inicio/inicio.component'
 
@@ -16,16 +17,18 @@ import { InicioComponent } from './inicio/inicio.component'
   declarations: [
     AppComponent,
     FooterComponent,
-    NavbarComponent,
-    ProyectosComponent,
-    ContactanosComponent,
+    NavbarComponent, 
+    FormularioContactoComponent,
     InformacionComponent,
     InformacionsidebarComponent,
-    InicioComponent
+    InicioComponent,
+    CarouselComponent,
+
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+   [CarouselModule]
   ],
   providers: [],
   bootstrap: [AppComponent]

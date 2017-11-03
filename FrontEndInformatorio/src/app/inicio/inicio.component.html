@@ -1,81 +1,80 @@
-<div class="row">
-    <div class="col-2 bg-white shad-inf">      
-        <div *ngFor="let group of proyectos" class="mt-3"> 
-            <button type="button" class="btn btn-link" (click)="link(group.anio)"> > {{ group.anio }}</button> 
-                <div *ngIf="links">
-                <div *ngFor="let proyecto of group.proyecto"> 
-                    <button *ngIf="aniolinks === group.anio" type="button" class="btn btn-link" (click)="cargarProyecto(proyecto)" (click)="ocultar()"> {{ proyecto.nombre }} </button>
+<div class="row">    
+    <div class="col-2 bg-white shad-inf p-0">
+        <div *ngFor="let group of proyectos" class="mt-3">
+            <button type="button" class="btn btn-link" (click)="link(group.anio)"> > {{ group.anio }}</button>
+            <div *ngIf="links">
+                <div *ngFor="let proyecto of group.proyecto">
+                    <button *ngIf="aniolinks === group.anio" type="button" class="btn btn-link" (click)="cargarProyecto(proyecto)" (click)="ocultar()">
+                        {{ proyecto.nombre }} </button>
                 </div>
             </div>
-        </div> 
-        </div>
-        
-    <div class="col-10 p-0"> 
-        
-        <div *ngIf="proyecto.id != null" >
-            <div *ngIf="ocultarinfo">
-
-        <div class="card-inf my-3">
-        <div class="card-header-inf bg-inf-blue lead text-white">    
-            <h2>{{proyecto.nombre}}</h2>
-        </div>
-        <div class="card-body-inf">  
-            <p class="lead">{{proyecto.descripcion}}</p>
-            <h5>Desarrolladores:</h5>
-            <p>{{proyecto.desarrolladores}}</p>
-            <h5>Galeria:</h5>
-            <ngb-carousel class="col-12">
-                <ng-template ngbSlide>
-                    <img src="https://lorempixel.com/900/500?r=1" alt="Random first slide">
-                    
-                    </ng-template>
-                    <ng-template ngbSlide>
-                      <img src="https://lorempixel.com/900/500?r=2" alt="Random second slide">
-                      
-                    </ng-template>
-                    <ng-template ngbSlide>
-                      <img src="https://lorempixel.com/900/500?r=3" alt="Random third slide">
-                      
-                    </ng-template>
-                  </ngb-carousel>
-            <h5>Descarga:</h5>
-            <p><a href=''>{{proyecto.descarga}}</a></p>
-        </div>
-        </div>
-        <button type="button" class="btn btn-inf mb-3"(click)="mostrar()">Volver</button>
         </div>
     </div>
 
+    <div class="col-10 p-0">
+
+        <div *ngIf="proyecto.id != null">
+            <div *ngIf="ocultarinfo">
+
+                <div class="card-inf my-3">
+                    <div class="card-header-inf bg-inf-blue lead text-white">
+                        <h2>{{proyecto.nombre}}</h2>
+                    </div>
+                    <div class="card-body-inf">
+                        <p class="lead">{{proyecto.descripcion}}</p>
+                        <h5>Desarrolladores:</h5>
+                        <p>{{proyecto.desarrolladores}}</p>
+                        <h5>Galeria:</h5>
+                        <div class="thumbnail">
+                            <a href="assets/1.jpg" target="_blank">
+                                <img src="./assets/1.jpg" alt="Lights" style="width:30%">
+                            </a>
+                            <a href="assets/2.jpg" target="_blank">
+                                <img src="./assets/2.jpg" alt="Lights" style="width:30%">
+                            </a>
+                            <a href="assets/3.jpg" target="_blank">
+                                <img src="./assets/2.jpg" alt="Lights" style="width:30%">
+                            </a>
+                        </div>
+                        <h5>Descarga:</h5>
+                        <p>
+                            <a href=''>{{proyecto.descarga}}</a>
+                        </p>
+
+                        <button type="button" class="btn btn-inf mb-3 " (click)="mostrar()">Volver</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div *ngIf="ver">
-            <div class="card-inf">
+            <div class="card-inf my-3">
                 <div class="card-header-inf bg-inf-blue text-white lead">
                     <h2>Proyectos</h2>
                 </div>
                 <div class="card-body-inf">
-                    <p class="lead">Cada año, los alumnos de distintos cursos del informatorio realizan proyectos en diversas áreas.
-                        Encontrá todos los proyectos acá.</p>
-                    <div *ngFor="let group of proyectos"> 
-                        <h5 class="mt-5">Año {{ group.anio }}</h5>  
-                        <div class="row">  
+                    <p class="lead">Cada año, los alumnos de distintos cursos del informatorio realizan proyectos en diversas áreas. Encontrá
+                        todos los proyectos acá.</p>
+                    <div *ngFor="let group of proyectos">
+                        <h5 class="mt-5">Año {{ group.anio }}</h5>
+                        <div class="row">
                             <div class="col-6" *ngFor="let proyecto of group.proyecto">
                                 <div class="card-inf-gray">
                                     <div class="card-header-inf text-white bg-inf-blue lead">
-                                            <h3>{{proyecto.nombre}}</h3>
+                                        <h3>{{proyecto.nombre}}</h3>
                                     </div>
                                     <div class="card-body-inf">
-                                            <p>{{proyecto.descripcion}}</p>
-                                            <button type="button" class="btn btn-inf" (click)="cargarProyecto(proyecto)" (click)="ocultar()">Ver más</button>
-                                    </div>  
+                                        <p>{{proyecto.descripcion}}</p>
+                                        <button type="button" class="btn btn-inf" (click)="cargarProyecto(proyecto)" (click)="ocultar()">Ver más</button>
+                                    </div>
                                 </div>
-                                
-                                
-                            </div> 
-                        </div> 
-                    </div>  
-                </div>         
-        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </div>
 </div>
-
-   
