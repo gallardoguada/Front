@@ -11,7 +11,8 @@ import { FormularioContactoComponent } from './formulario-contacto/formulario-co
 import { InformacionComponent } from './informacion/informacion.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { InformacionsidebarComponent } from './informacionsidebar/informacionsidebar.component';
-import { InicioComponent } from './inicio/inicio.component'
+import { InicioComponent } from './inicio/inicio.component';
+import { CursosComponent } from './cursos/cursos.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { InicioComponent } from './inicio/inicio.component'
     InformacionsidebarComponent,
     InicioComponent,
     CarouselComponent,
+    CursosComponent,
 
   ],
   imports: [

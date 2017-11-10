@@ -19,6 +19,9 @@ export class NavbarComponent implements OnInit {
     cargarformulariocontacto(){
       this.mensajeDelHijo.emit('formulario');
     }
+    cargarCursos(){
+      this.mensajeDelHijo.emit('curso');
+    }
 
   constructor() { }
 
