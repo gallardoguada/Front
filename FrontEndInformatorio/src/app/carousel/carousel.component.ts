@@ -20,7 +20,7 @@ export class CarouselComponent implements OnInit {
     verifyBeforeLoad: true,
     log: false,
     animation: true,
-    animationType: AnimationConfig.APPEAR,
+    animationType: AnimationConfig.SLIDE,
     autoplay: true,
     autoplayDelay: 3000,
     stopAutoplayMinWidth: 768

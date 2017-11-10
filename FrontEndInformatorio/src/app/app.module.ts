@@ -13,6 +13,11 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { InformacionsidebarComponent } from './informacionsidebar/informacionsidebar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CursosComponent } from './cursos/cursos.component'
+import {CursosService} from './cursos/cursos.service';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+
+
 
 @NgModule({
   declarations: [
@@ -30,9 +35,11 @@ import { CursosComponent } from './cursos/cursos.component'
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-   [CarouselModule]
+   [CarouselModule],
+   FormsModule,
+   HttpModule,
   ],
-  providers: [],
+  providers: [CursosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

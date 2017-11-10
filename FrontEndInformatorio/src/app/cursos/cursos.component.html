@@ -1,3 +1,22 @@
-<p>
-  cursos works!
-</p>
+
+<!--
+<ul *ngFor="let curso of cursos">
+<li>{{curso.numcurso}}                     {{curso.Descripcion}}</li>
+<button>{{curso.Inscripcion}}</button>
+</ul>-->
+
+
+
+<br> 
+
+<div class="col-6" *ngFor="let curso of cursos">
+    <div class="card-inf-gray">
+        <div class="card-header-inf text-white bg-inf-blue lead">
+            <h3>{{curso.numcurso}}</h3>
+        </div>
+        <div class="card-body-inf">
+            <p>{{curso.Descripcion}}</p>
+            <button type="button" class="btn btn-info>">{{curso.Inscripcion}}</button>
+        </div>
+    </div>
+</div>
