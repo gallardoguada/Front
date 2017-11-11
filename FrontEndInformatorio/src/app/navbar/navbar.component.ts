@@ -19,12 +19,15 @@ export class NavbarComponent implements OnInit {
     cargarformulariocontacto(){
       this.mensajeDelHijo.emit('formulario');
     }
-
+    cargarcursos(){
+    this.mensajeDelHijo.emit('cursos');  
+    }
     cargarpagina(){
       this.mensajeDelHijo.emit('pagina');
     }
         
 
+    
   constructor() { }
 
   ngOnInit() {
