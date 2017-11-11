@@ -20,6 +20,11 @@ export class NavbarComponent implements OnInit {
       this.mensajeDelHijo.emit('formulario');
     }
 
+    cargarpagina(){
+      this.mensajeDelHijo.emit('pagina');
+    }
+        
+
   constructor() { }
 
   ngOnInit() {

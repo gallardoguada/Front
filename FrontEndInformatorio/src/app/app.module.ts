@@ -11,7 +11,14 @@ import { FormularioContactoComponent } from './formulario-contacto/formulario-co
 import { InformacionComponent } from './informacion/informacion.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { InformacionsidebarComponent } from './informacionsidebar/informacionsidebar.component';
-import { InicioComponent } from './inicio/inicio.component'
+import { InicioComponent } from './inicio/inicio.component';
+import { PaginaComponent } from './pagina/pagina.component';
+import { ContainerComponent } from './container/container.component'
+
+import { BlogService } from './pagina/pagina.service'
+import { FormsModule } from '@angular/forms'
+import { HttpModule } from '@angular/http'
+
 
 @NgModule({
   declarations: [
@@ -23,14 +30,19 @@ import { InicioComponent } from './inicio/inicio.component'
     InformacionsidebarComponent,
     InicioComponent,
     CarouselComponent,
+    PaginaComponent,
+    ContainerComponent,
 
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-   [CarouselModule]
+   [CarouselModule],
+   FormsModule,
+   HttpModule
+
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
