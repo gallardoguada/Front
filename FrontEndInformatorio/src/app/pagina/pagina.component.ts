@@ -12,6 +12,11 @@ export class PaginaComponent implements OnInit {
 
   }
 
+  parseBody(body:string) {
+    // you will need to improve this regex.
+    return body.replace(/(http.*?\s)/, "<a href=\"$1\" target=blank >$1</a>")
+  }
+
   posts = [];
   
   ngOnInit() {
