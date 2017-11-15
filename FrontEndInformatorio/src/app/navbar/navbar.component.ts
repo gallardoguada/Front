@@ -6,7 +6,14 @@ import { Component, EventEmitter, OnInit, Output} from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
   @Output() mensajeDelHijo = new EventEmitter();
+
+    evento=null;
+
+    cargarPaginainicio(){
+      this.mensajeDelHijo.emit('pagina-inicio');
+    }
   
     cargarInformacion(){
       this.mensajeDelHijo.emit('informacion');

@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import { CursosComponent } from './cursos/cursos.component'
 import {CursosService} from './cursos/cursos.service';
+import { PaginaInicioComponent } from './pagina-inicio/pagina-inicio.component';
+import { IniciotabsComponent } from './iniciotabs/iniciotabs.component';
 
 
 
@@ -35,7 +37,9 @@ import {CursosService} from './cursos/cursos.service';
     CarouselComponent,
     PaginaComponent,
     ContainerComponent,
-    CursosComponent
+    CursosComponent,
+    PaginaInicioComponent,
+    IniciotabsComponent
 
   ],
   imports: [
