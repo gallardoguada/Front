@@ -25,6 +25,7 @@ import { IniciotabsComponent } from './iniciotabs/iniciotabs.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
