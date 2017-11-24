@@ -1,42 +1,48 @@
 
-<div class="row">
-  <div class="col-6">
-    <img src="assets\logo_inicio.PNG"  >
-  </div>
 
-  <div class="col-6 p-0">
-
-    <div class="card-inf-gray ml-3 mb-3">
-
-      <div class="">
-
-          <ngb-tabset >
-              <ngb-tab  title="BLOG">
-                <ng-template class="nav-item" ngbTabContent>
-                 
-                      <app-pagina></app-pagina>
-                
-                 
-                </ng-template>
-              </ngb-tab>
-              
-              <ngb-tab title="FACEBOOK">
-                <ng-template ngbTabContent>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Finformatorio%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>   
-                </ng-template>
-              </ngb-tab>
-              
-              <ngb-tab title="TWITTER">
-                <ng-template ngbTabContent>
-                    <iframe src="https://tools.classcube.com/embed/twitter/InformatorioCh/" width="500" height="500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
-                  </ng-template>
-              </ngb-tab>
+  <div class="row pt-3">
+    <div class="col-12 col-md-6">
+      <img class="img-fluid" src="assets\logo_inicio.PNG"   >
+    </div>
+    
+    
         
-            </ngb-tabset>
+          
+
+    <div class="col-12 col-md-6 px-0">
+
+      <div class="card-inf">
+
+      
+
+      <ngb-tabset>
+        <ngb-tab class="text-white" title="BLOG">
+          <ng-template  ngbTabContent>
+            <div class="row px-3 mx-1">
+              <div class="col-12">
+                <app-pagina></app-pagina>
+              </div>
+            </div>
+          </ng-template>
+        </ngb-tab>
+              
+        <ngb-tab title="FACEBOOK">
+          <ng-template ngbTabContent>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Finformatorio%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>   
+          </ng-template>
+        </ngb-tab>
+              
+        <ngb-tab title="TWITTER">
+          <ng-template ngbTabContent>
+            <iframe src="https://tools.classcube.com/embed/twitter/InformatorioCh/" width="500" height="500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true"></iframe>
+          </ng-template>
+        </ngb-tab>
+        
+      </ngb-tabset>
  
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
 
 

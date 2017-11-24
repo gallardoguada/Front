@@ -1,0 +1,16 @@
+.blog{
+height:200px !important;
+}
+.imagen{
+ width: 400px;
+ height: auto;   
+}
+.col-md-4 {
+    display: table-cell;
+    float: none; 
+}
+
+.container{
+ width: 100%;   
+}
+ 
