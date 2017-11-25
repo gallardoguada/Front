@@ -1,4 +1,4 @@
-{"posts": [
+﻿{"posts": [
 
 {
   "id": 1,
@@ -63,6 +63,76 @@
                   "Inscripcion": "INSCRIBIRSE"
    }
    
-  ]
+  ],
 
+
+
+"Detalles":[
+{
+"id": 1,
+"nombre": "informatorio2017",
+"descripcion": "Descripción con más de 20 carácteres.",
+"inicio": "2017-12-10",
+"final": "2018-10-10",
+"direccion": "Arturo Illia",
+"locality_id": 1,
+"created_at": "2017-11-18 11:54:48",
+"updated_at": "2017-11-18 11:54:48"
+},
+{
+"id": 2,
+"nombre": "Curso 2",
+"descripcion": "alndjsakkd,mdsmnkankankakanaskj",
+"inicio": "2018-10-10",
+"final": "2019-01-11",
+"direccion": "salknskjnkasjnkjsn",
+"locality_id": 1,
+"created_at": "2017-11-20 06:56:31",
+"updated_at": "2017-11-20 06:56:31"
+},
+{
+"id": 3,
+"nombre": "CURSO 3",
+"descripcion": "Descripcion cualquiera. 20 caract",
+"inicio": "2018-10-10",
+"final": "2019-10-10",
+"direccion": "Alvear 1969",
+"locality_id": 2,
+"created_at": "2017-11-24 23:15:25",
+"updated_at": "2017-11-24 23:15:25"
+},
+{
+"id": 4 ,
+"nombre": "Curso 4",
+"descripcion": "alndjsakkd,mdsmnkankankakanaskj",
+"inicio": "2018-10-10",
+"final": "2019-01-11",
+"direccion": "salknskjnkasjnkjsn",
+"locality_id": 1,
+"created_at": "2017-11-20 06:56:31",
+"updated_at": "2017-11-20 06:56:31"
+},
+{
+"id": 5,
+"nombre": "Curso 5",
+"descripcion": "alndjsakkd,mdsmnkankankakanaskj",
+"inicio": "2018-10-10",
+"final": "2019-01-11",
+"direccion": "salknskjnkasjnkjsn",
+"locality_id": 1,
+"created_at": "2017-11-20 06:56:31",
+"updated_at": "2017-11-20 06:56:31"
+},
+{
+"id": 6,
+"nombre": "Curso 6",
+"descripcion": "alndjsakkd,mdsmnkankankakanaskj",
+"inicio": "2018-10-10",
+"final": "2019-01-11",
+"direccion": "salknskjnkasjnkjsn",
+"locality_id": 1,
+"created_at": "2017-11-20 06:56:31",
+"updated_at": "2017-11-20 06:56:31"
+}
+]
 }
