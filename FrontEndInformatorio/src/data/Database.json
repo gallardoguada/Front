@@ -70,7 +70,7 @@
 "Detalles":[
 {
 "id": 1,
-"nombre": "informatorio2017",
+"nombre": "CURSO NÚMERO 1",
 "descripcion": "Descripción con más de 20 carácteres.",
 "inicio": "2017-12-10",
 "final": "2018-10-10",
@@ -81,7 +81,7 @@
 },
 {
 "id": 2,
-"nombre": "Curso 2",
+"nombre": "CURSO NÚMERO 2",
 "descripcion": "alndjsakkd,mdsmnkankankakanaskj",
 "inicio": "2018-10-10",
 "final": "2019-01-11",
@@ -92,7 +92,7 @@
 },
 {
 "id": 3,
-"nombre": "CURSO 3",
+"nombre": "CURSO NÚMERO 3",
 "descripcion": "Descripcion cualquiera. 20 caract",
 "inicio": "2018-10-10",
 "final": "2019-10-10",
@@ -103,7 +103,7 @@
 },
 {
 "id": 4 ,
-"nombre": "Curso 4",
+"nombre": "CURSO NÚMERO 4",
 "descripcion": "alndjsakkd,mdsmnkankankakanaskj",
 "inicio": "2018-10-10",
 "final": "2019-01-11",
@@ -114,7 +114,7 @@
 },
 {
 "id": 5,
-"nombre": "Curso 5",
+"nombre": "CURSO NÚMERO 5",
 "descripcion": "alndjsakkd,mdsmnkankankakanaskj",
 "inicio": "2018-10-10",
 "final": "2019-01-11",
@@ -125,7 +125,7 @@
 },
 {
 "id": 6,
-"nombre": "Curso 6",
+"nombre": "CURSO NÚMERO 6",
 "descripcion": "alndjsakkd,mdsmnkankankakanaskj",
 "inicio": "2018-10-10",
 "final": "2019-01-11",

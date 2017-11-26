@@ -22,7 +22,7 @@ import { CursosComponent } from './cursos/cursos.component'
 import {CursosService} from './cursos/cursos.service';
 import { PaginaInicioComponent } from './pagina-inicio/pagina-inicio.component';
 import { IniciotabsComponent } from './iniciotabs/iniciotabs.component';
-import { DetalleComponent } from './detalle/detalle.component';
+import { DetallesComponent } from './detalles/detalles.component';
 
 
 
@@ -42,7 +42,7 @@ import { DetalleComponent } from './detalle/detalle.component';
     CursosComponent,
     PaginaInicioComponent,
     IniciotabsComponent,
-    DetalleComponent
+    DetallesComponent
 
   ],
   imports: [

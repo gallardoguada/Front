@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CursosService} from './cursos.service';
 
-
 @Component({
   selector: 'cursos',
   templateUrl: './cursos.component.html',
@@ -19,3 +18,4 @@ this.CursosService.getCursos().subscribe(   ResponseCursos => this.cursos=Respon
   }
 
 }
+
