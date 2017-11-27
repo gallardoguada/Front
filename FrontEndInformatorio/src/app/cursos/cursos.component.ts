@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {CursosService} from './cursos.service';
+
 
 @Component({
   selector: 'cursos',
@@ -7,6 +8,14 @@ import {CursosService} from './cursos.service';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
+
+  @Output() mensajeDelHijo = new EventEmitter();
+
+   evento = null;
+
+   cargardetalles(){
+     this.mensajeDelHijo.emit('detalledecursos')
+   }
 
   constructor(private CursosService: CursosService) { }
   
