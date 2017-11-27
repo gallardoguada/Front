@@ -32,8 +32,15 @@ export class NavbarComponent implements OnInit {
     cargarpagina(){
       this.mensajeDelHijo.emit('pagina');
     }
-        
 
+    cargarFotos(){
+      this.mensajeDelHijo.emit('fotos');
+    }
+
+    cargarVideos(){
+      this.mensajeDelHijo.emit('videos');
+    }
+        
     
   constructor() { }
 

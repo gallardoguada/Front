@@ -15,7 +15,13 @@
           <li><a class="nav-item nav-link text-white" href="#" (click)="cargarInformacion()">¿Qué es el informatorio? <span class="sr-only">(current)</span></a></li>
           <li><a class="nav-item nav-link text-white" href="#"  (click)="cargarcursos()">Cursos <span class="sr-only">(current)</span></a></li>
           <li><a class="nav-item nav-link text-white" href="#" (click)="cargarProyectos()">Proyectos <span class="sr-only">(current)</span></a></li>
-          <li><a class="nav-item nav-link text-white" href="#" >Galería <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown"><a class="nav-item nav-link text-white dropdown-toggle" id="galerias" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Galería <span class="sr-only">(current)</span></a>
+              <div class="dropdown-menu" aria-labelledby="galerias">
+                <a class="dropdown-item" href="#" (click)="cargarFotos()">Fotos</a>
+                <a class="dropdown-item" href="#" (click)="cargarVideos()">Videos</a> 
+              </div> 
+          </li>
           <li><a class="nav-item nav-link text-white" href="#"(click)="cargarpagina()">Blog <span class="sr-only">(current)</span></a></li>
           <li><a class="nav-item nav-link text-white" href="#"  (click)="cargarformulariocontacto()">Contactanos <span class="sr-only">(current)</span></a></li>
           
