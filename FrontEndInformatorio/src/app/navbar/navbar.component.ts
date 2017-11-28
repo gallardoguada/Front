@@ -11,6 +11,10 @@ export class NavbarComponent implements OnInit {
 
     evento=null;
 
+    cargarregistro(){
+      this.mensajeDelHijo.emit('registro');
+    }
+    
     cargarPaginainicio(){
       this.mensajeDelHijo.emit('pagina-inicio');
     }

@@ -24,6 +24,7 @@ import { PaginaInicioComponent } from './pagina-inicio/pagina-inicio.component';
 import { IniciotabsComponent } from './iniciotabs/iniciotabs.component';
 import { FotosComponent } from './fotos/fotos.component';
 import { VideosComponent } from './videos/videos.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 
@@ -44,7 +45,8 @@ import { VideosComponent } from './videos/videos.component';
     PaginaInicioComponent,
     IniciotabsComponent,
     FotosComponent,
-    VideosComponent
+    VideosComponent,
+    RegistroComponent
 
   ],
   imports: [
