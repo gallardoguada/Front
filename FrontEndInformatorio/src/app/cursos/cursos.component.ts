@@ -13,10 +13,12 @@ export class CursosComponent implements OnInit {
 
    evento = null;
    cursoSeleccionado = null;
+   mostrarCurso = false;
+   enable = false;
 
    cargardetalles(cursoEntra){
      //this.mensajeDelHijo.emit('detalledecursos')
-     this.cursoSeleccionado = cursoEntra;
+     this.enable = true;
      console.log(this.cursoSeleccionado);
      
    }

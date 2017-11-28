@@ -10,12 +10,12 @@ import {DetallesService} from './detalles.service';
 export class DetallesComponent implements OnInit {
   detalles: any;
 
-  constructor(private DetallesService: DetallesService) { }
-  
+  constructor() { }
+  //constructor(private DetallesService: DetallesService) { }
   cursos = [];
 
   ngOnInit() {
-this.DetallesService.getDetalles().subscribe(   ResponseDetalles => this.detalles=ResponseDetalles);
+//this.DetallesService.getDetalles().subscribe(   ResponseDetalles => this.detalles=ResponseDetalles);
 
   }
 
