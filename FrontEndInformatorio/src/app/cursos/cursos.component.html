@@ -17,14 +17,15 @@
                 <div class="row">
                     <div class="col-6 mb-4" *ngFor="let curso of cursos">
                         <div class="card-inf-gray">
-                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{curso.numcurso}}</h3></div>
+                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{curso.nombre}}</h3></div>
                             <div class="card-body-inf">
                                 <div class="row">
                                     <div class="col-12">
-                                        <p>{{curso.Descripcion}}</p>
+                                        <p>{{curso.descripcion}}</p>
+                                        <p *ngIf="mostrarCurso">{{curso.direccion}}</p>
                                     </div>
                                     <div class="col-6">
-                                        <button href=# (click)="cargardetalles()" type="button" class="btn btn-inf btn-xs">VER MÁS</button>
+                                        <button href=# (click)="cargardetalles(curso)" type="button" class="btn btn-inf btn-xs">VER MÁS</button>
                                         <button type="button" class="btn btn-inf btn-xs">INSCRIBIRME</button>
                                     </div>
                                 </div>

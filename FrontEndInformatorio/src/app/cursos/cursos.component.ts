@@ -12,9 +12,13 @@ export class CursosComponent implements OnInit {
   @Output() mensajeDelHijo = new EventEmitter();
 
    evento = null;
+   cursoSeleccionado = null;
 
-   cargardetalles(){
-     this.mensajeDelHijo.emit('detalledecursos')
+   cargardetalles(cursoEntra){
+     //this.mensajeDelHijo.emit('detalledecursos')
+     this.cursoSeleccionado = cursoEntra;
+     console.log(this.cursoSeleccionado);
+     
    }
 
   constructor(private CursosService: CursosService) { }
