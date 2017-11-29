@@ -1,16 +1,17 @@
 <div class="row">
     <div class="col-12" *ngFor="let detalle of detalles">
         <div class="card-inf-gray">
-            <div class="card-header-inf bg-inf-blue text-white"><h3>{{detalle.nombre}}</h3></div>
+            <div class="card-header-inf bg-inf-blue text-white"><h3>{{detalles.nombre}}</h3></div>
             <div class="card-body-inf">
                <div class="row">
-                 <div class="col-12">{{detalle.descripcion}}</div>
-                 <div class="col-12">{{detalle.inicio}}</div>
-                 <div class="col-12">{{detalle.final}}</div>
-                 <div class="col-12">{{detalle.dirrecion}}</div>
+                 <div class="col-12">{{Detalle.descripcion}}</div>
+                 <div class="col-12">{{Detalles.inicio}}</div>
+                 <div class="col-12">{{Detalles.final}}</div>
+                 <div class="col-12">{{Detalles.dirrecion}}</div>
                </div>
            </div>
         </div>  
    </div>
 </div>
-              
+<div class= "row">
+    <div class="col-12"><button type="button" class="btn btn-inf mb-3 " href=# (click)="cursos()">Volver</button></div>             

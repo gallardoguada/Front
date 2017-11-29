@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {DetallesService} from './detalles.service';
 
 
@@ -8,15 +8,20 @@ import {DetallesService} from './detalles.service';
   styleUrls: ['./detalles.component.css']
 })
 export class DetallesComponent implements OnInit {
-  detalles: any;
-
-  constructor() { }
-  //constructor(private DetallesService: DetallesService) { }
-  cursos = [];
-
-  ngOnInit() {
-//this.DetallesService.getDetalles().subscribe(   ResponseDetalles => this.detalles=ResponseDetalles);
-
-  }
-
-}
+  
+    @Output() mensajeDelHijo = new EventEmitter();
+  
+      evento=null;
+  
+      cargarcursos(){
+        this.mensajeDelHijo.emit('cursos');  
+        }
+      
+   constructor() { }
+      
+        ngOnInit() {
+        }
+      
+      }
+   
+    

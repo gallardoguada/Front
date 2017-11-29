@@ -10,7 +10,7 @@ export class DetallesService{
 
     }
 
-    private url: string =  "http://localhost:3000/Cursos";
+    private url: string =  "http://localhost:3000/Detalles";
 
     getDetalles(){
      return this.http.get(this.url).map((response:Response)=> response.json());

@@ -6,25 +6,23 @@
 </ul>-->
 
 
-
 <div class="row">
-    <div class="col-12 p-0" *ngIf="enable == false">
+    <div class="col-12 p-0">
         <div class="card-inf p-0 my-3">
             <div class="card-header-inf bg-inf-blue text-white">
                 <h3 class="mb-4">CURSOS INFORMATORIO 2018</h3>
             </div>
             <div class="card-body-inf">
-                    <div class="col-6 mb-4" *ngFor="let curso of cursos">
+                    <div class="col-6 mb-4" *ngFor="let detalle of detalles">
                         <div class="card-inf-gray">
-                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{curso.nombre}}</h3></div>
+                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{detalles.nombre}}</h3></div>
                             <div class="card-body-inf">
                                 <div class="row">
                                     <div class="col-12">
-                                        <p>{{curso.descripcion}}</p>
-                                        <p *ngIf="mostrarCurso">{{curso.direccion}}</p>
+                                        <p>{{detalles.descripcion}}</p>
                                     </div>
                                     <div class="col-6">
-                                        <button href=# (click)="cargardetalles(cursoEntra)" type="button" class="btn btn-inf btn-xs">VER MÁS</button>
+                                        <button href=# (click)="cargardetalles" class="btn btn-inf btn-xs">VER MÁS</button>
                                         <button type="button" class="btn btn-inf btn-xs">INSCRIBIRME</button>
                                     </div>
                                 </div>
@@ -35,4 +33,4 @@
             </div>
         </div>
     </div>
-    <detalles *ngIf="enable == true"></detalles>
+ 
