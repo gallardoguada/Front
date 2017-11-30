@@ -13,7 +13,7 @@ export class DetallesComponent implements OnInit {
   
       evento=null;
   
-      cargarcursos(){
+      cargarCursos(){
         this.mensajeDelHijo.emit('cursos');  
         }
       

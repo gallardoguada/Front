@@ -12,9 +12,7 @@ export class CursosComponent implements OnInit {
   @Output() mensajeDelHijo = new EventEmitter();
 
    evento = null;
-   
-
-   cargarDetalles(){
+   CargarDetalles(){
     this.mensajeDelHijo.emit('detalles');
   }
   constructor() { }
