@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {CursosService} from './cursos.service';
 
 
@@ -9,15 +9,26 @@ import {CursosService} from './cursos.service';
 })
 export class CursosComponent implements OnInit {
 
-  @Output() mensajeDelHijo = new EventEmitter();
 
-   evento = null;
-   CargarDetalles(){
-    this.mensajeDelHijo.emit('detalles');
+
+  volver(){
+    this.cursoSeleccionado = null;
   }
-  constructor() { }
-  
-    ngOnInit() {
-    }
-  
+
+  cursoSeleccionado = null;
+
+  verCurso(curso){
+    this.cursoSeleccionado = curso;
+    console.log(this.cursoSeleccionado);
   }
+
+  constructor(private CursosService: CursosService) { }
+
+  cursos = [];
+
+  ngOnInit() {
+this.CursosService.getCursos().subscribe(   ResponseCursos => this.cursos=ResponseCursos);
+
+  }
+
+}

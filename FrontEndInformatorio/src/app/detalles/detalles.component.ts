@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {DetallesService} from './detalles.service';
 
 
@@ -8,20 +8,15 @@ import {DetallesService} from './detalles.service';
   styleUrls: ['./detalles.component.css']
 })
 export class DetallesComponent implements OnInit {
-  
-    @Output() mensajeDelHijo = new EventEmitter();
-  
-      evento=null;
-  
-      cargarCursos(){
-        this.mensajeDelHijo.emit('cursos');  
-        }
-      
+
+  @Input('cursoSelectDetalle') curosSeleccionado;
+
+
+
    constructor() { }
-      
+
         ngOnInit() {
         }
-      
+
       }
-   
-    
+

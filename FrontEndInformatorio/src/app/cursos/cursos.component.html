@@ -5,31 +5,54 @@
 <button>{{curso.Inscripcion}}</button>
 </ul>-->
 
-<ul *ngFor="let detalle of detalles">
-<div class="row">
+
+
+<div *ngIf="cursoSeleccionado">
+  <div class="row">
+    <div class="col-12">
+      <div class="card-inf-white">
+        <div class="card-header-inf bg-inf-blue text-white"><h3>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</h3></div>
+        <div class="card-body-inf">
+          <div class="row">
+            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
+            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
+            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
+            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-inf btn-xs" align= centered (click)="volver()">VOLVER</button>
+  <ul>       </ul>
+</div>
+
+<div class="row" *ngIf="cursoSeleccionado == null">
     <div class="col-12 p-0">
         <div class="card-inf p-0 my-3">
             <div class="card-header-inf bg-inf-blue text-white">
                 <h3 class="mb-4">CURSOS INFORMATORIO 2018</h3>
             </div>
-            <div class="card-body-inf" >
-                    <div class="col-6 mb-4" >
+            <div class="card-body-inf">
+                <div class="row">
+                    <div class="col-6 mb-4" *ngFor="let curso of cursos">
                         <div class="card-inf-gray">
-                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{detalles.nombre}}</h3></div>
+                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{curso.numcurso}}</h3></div>
                             <div class="card-body-inf">
                                 <div class="row">
                                     <div class="col-12">
-                                        <p>{{detalles.descripcion}}</p>
+                                        <p>{{curso.Descripcion}}</p>
                                     </div>
                                     <div class="col-6">
-                                        <button class="btn btn-inf btn-xs"(click)="cargardetalles">VER MÁS</button>
+                                        <button type="button" class="btn btn-inf btn-xs" (click) ="verCurso(curso)">VER MÁS</button>
                                         <button type="button" class="btn btn-inf btn-xs">INSCRIBIRME</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
+            </div>
         </div>
     </div>
-</ul>
+</div>
