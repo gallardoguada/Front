@@ -10,6 +10,8 @@ import{Registrado} from 'C:/Front/FrontEndInformatorio/src/app/registrado';
 })
 
 
+
+
 export class RegistroComponent implements OnInit {
 
 
