@@ -6,25 +6,29 @@
 </ul>-->
 
 
-
+<div class="container">
 <div *ngIf="cursoSeleccionado">
   <div class="row">
     <div class="col-12">
-      <div class="card-inf-white">
-        <div class="card-header-inf bg-inf-blue text-white"><h3>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</h3></div>
+      <div class="card-inf-grey">
+        <div class="card-header-inf bg-inf-blue text-white"><h3>{{cursoSeleccionado.nombre}}</h3></div>
+        <div class="card-inf">
         <div class="card-body-inf">
           <div class="row">
-            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
-            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
-            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
-            <div class="col-12"><p>NUMERO DE CURSO: {{cursoSeleccionado.numcurso}}</p></div>
+            <div class="col-12"><p class="lead">{{cursoSeleccionado.descripcion}}</p></div>
+            <div class="col-12"><h5>Fecha de inicio del curso:</h5></div>
+            <div class="col-12"><p>{{cursoSeleccionado.inicio}}</p></div>
+            <div class="col-12"><h5>Fecha de finalizacion del curso:</h5></div>
+            <div class="col-12"><p>{{cursoSeleccionado.final}}</p></div>
           </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
   <button type="button" class="btn btn-inf btn-xs" align= centered (click)="volver()">VOLVER</button>
   <ul>       </ul>
+  </div>
 </div>
 
 <div class="row" *ngIf="cursoSeleccionado == null">
@@ -37,11 +41,11 @@
                 <div class="row">
                     <div class="col-6 mb-4" *ngFor="let curso of cursos">
                         <div class="card-inf-gray">
-                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{curso.numcurso}}</h3></div>
+                            <div class="card-header-inf bg-inf-blue text-white"><h3>{{curso.nombre}}</h3></div>
                             <div class="card-body-inf">
                                 <div class="row">
                                     <div class="col-12">
-                                        <p>{{curso.Descripcion}}</p>
+                                        <p>{{curso.descripcion}}</p>
                                     </div>
                                     <div class="col-6">
                                         <button type="button" class="btn btn-inf btn-xs" (click) ="verCurso(curso)">VER MÁS</button>
