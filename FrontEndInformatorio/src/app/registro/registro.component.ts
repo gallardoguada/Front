@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import{Registrado} from 'D:/ProyectoInfo18112017/Front/FrontEndInformatorio/src/app/registrado';
+import{Registrado} from 'C:/Users/leyla/Desktop/Front/FrontEndInformatorio/src/app/registrado';
 /*El import{registrado} importa (valga la redundancia) la clase registrado definido en campos.ts*/
 
 @Component({
@@ -13,7 +13,7 @@ import{Registrado} from 'D:/ProyectoInfo18112017/Front/FrontEndInformatorio/src/
 export class RegistroComponent implements OnInit {
 
 
-  model = new Registrado ('','','','','',''); /*Crea un MODELO de registrado y se le asigna valores iniciales según campos tenga*/
+  model = new Registrado ('','','','','','') /*Crea un MODELO de registrado y se le asigna valores iniciales según campos tenga*/
 
   submitted = false; /*variable submitted tipo booleana, inicializada en falso */
 
