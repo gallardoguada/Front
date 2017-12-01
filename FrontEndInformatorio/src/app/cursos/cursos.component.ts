@@ -9,8 +9,21 @@ import {CursosService} from './cursos.service';
 })
 export class CursosComponent implements OnInit {
 
+
+
+  volver(){
+    this.cursoSeleccionado = null;
+  }
+
+  cursoSeleccionado = null;
+
+  verCurso(curso){
+    this.cursoSeleccionado = curso;
+    console.log(this.cursoSeleccionado);
+  }
+
   constructor(private CursosService: CursosService) { }
-  
+
   cursos = [];
 
   ngOnInit() {
