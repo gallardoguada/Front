@@ -14,7 +14,7 @@
     "hora":"15:51",
     "cuerpo": "Loremsa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis",
     "img": null
-  
+
   },
 
 {
@@ -28,41 +28,70 @@
 
 "Cursos":[
   {
-                  "numcurso" : "CURSO NÚMERO 1",
-                  "Descripcion": "descripción curso numero 1 lorem ipsum dolor sit amet",
-                  "Inscripcion": "INSCRIBIRSE"
+    "id": 1,
+    "nombre": "CURSO NÚMERO 1",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "inicio": "2017-12-10",
+    "final": "2018-10-10",
+    "direccion": "Arturo Illia",
+    "locality_id": 1,
+    "created_at": "2017-11-18 11:54:48",
+    "updated_at": "2017-11-18 11:54:48"
   },
-
- {
-                  "numcurso" : " CURSO NÚMERO 2",
-                  "Descripcion" : "descripción curso numero 2 lorem ipsum dolor sit amet",
-                   "Inscripcion": "INSCRIBIRSE"
-  },
-
   {
-                  "numcurso" : "CURSO NÚMERO 3",
-                  "Descripcion" :  "descripción curso numero 3 lorem ipsum dolor sit amet",
-                  "Inscripcion": "INSCRIBIRSE"
+    "id": 2,
+    "nombre": "CURSO NÚMERO 2",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "inicio": "2018-10-10",
+    "final": "2019-01-11",
+    "direccion": "salknskjnkasjnkjsn",
+    "locality_id": 1,
+    "created_at": "2017-11-20 06:56:31",
+    "updated_at": "2017-11-20 06:56:31"
   },
-
   {
-                  "numcurso" : "CURSO NÚMERO 4",
-                  "Descripcion" :  "descripción curso numero 4 lorem ipsum dolor sit amet",
-                  "Inscripcion": "INSCRIBIRSE"
-   },
+    "id": 3,
+    "nombre": "CURSO NÚMERO 3",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "inicio": "2018-10-10",
+    "final": "2019-10-10",
+    "direccion": "Alvear 1969",
+    "locality_id": 2,
+    "created_at": "2017-11-24 23:15:25",
+    "updated_at": "2017-11-24 23:15:25"
+  },
+  {
+    "id": 4 ,
+    "nombre": "CURSO NÚMERO 4",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "inicio": "2018-10-10",
+    "final": "2019-01-11",
+    "direccion": "salknskjnkasjnkjsn",
+    "locality_id": 1,
+    "created_at": "2017-11-20 06:56:31",
+    "updated_at": "2017-11-20 06:56:31"
+  },
+  {
+    "id": 5,
+    "nombre": "CURSO NÚMERO 5",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "inicio": "2018-10-10",
+    "final": "2019-01-11",
+    "direccion": "salknskjnkasjnkjsn",
+    "locality_id": 1,
+    "created_at": "2017-11-20 06:56:31",
+    "updated_at": "2017-11-20 06:56:31"
+  },
+  {
+    "id": 6,
+    "nombre": "CURSO NÚMERO 6",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "inicio": "2018-10-10",
+    "final": "2019-01-11",
+    "direccion": "salknskjnkasjnkjsn",
+    "locality_id": 1,
+    "created_at": "2017-11-20 06:56:31",
+    "updated_at": "2017-11-20 06:56:31"
+  }
+]}
 
-   {
-                   "numcurso" : "CURSO NÚMERO 5",
-                  "Descripcion" :  "descripción curso numero 5 lorem ipsum dolor sit amet",
-                   "Inscripcion": "INSCRIBIRSE"
-   },
-
-   {
-                  "numcurso" : "CURSO NÚMERO 6",
-                  "Descripcion" :  "descripción curso numero 6 lorem ipsum dolor sit amet",
-                  "Inscripcion": "INSCRIBIRSE"
-   }
-   
-  ]
-
-}

@@ -1,103 +1,84 @@
-
-
-
-
-<div class="card-inf p-0 my-3" _ngcontent-c6="">
-
+<div class="card-inf p-o my-3" _ngcontent-c6="" >
   <div class="row">
 
     <div class="col-6">
 
-      <form action="">
+      <div class="container">
+
+        <form #submitBand="ngForm" (ngSubmit)="onSubmit()">
+
+          <div class="lead mb-3 ml-3">
+              <br>
+              <strong>REGISTRARSE</strong>
+          </div>
+
+          <div class="mb-3 ml-3">
+              <p>Al hacerte una cuenta podrás inscribirte a nuestros cursos, comentar en nuestro blog y mucho más.</p>
+              <p>Por favor complete todos los campos que indica el color rojo.</p>
+          </div>
 
 
-        <div class="lead mb-3 ml-3">
-          <br>
-          <strong>REGISTRARSE</strong>
-        </div>
 
-        <div class="mb-3 ml-3">
-          <p>Al hacerte una cuenta podrás inscribirte a nuestros cursos, comentar en nuestro blog y mucho más</p>
-        </div>
+          <div class="form-group mb-3 ml-3">
+            <label for="name" class="lead">Nombre</label>
+            <input type="text" class="form-control" id="name" required [(ngModel)]="model.nombre" name="name" #name="ngModel" placeholder="Ingrese su nombre...">
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger" >
+              Campo obligatorio.
+            </div>
+          </div>
 
-        <div class="lead mb-3 ml-3">
-          <h6>Nombre</h6>
-        </div>
+          <div class="form-group mb-3 ml-3">
+            <label for="surname" class="lead">Apellido</label>
+            <input type="text" class="form-control" id="surname" required [(ngModel)]="model.apellido" name="surname" #surname="ngModel" placeholder="Ingrese su apellido...">
+            <div [hidden]="surname.valid || surname.pristine" class="alert alert-danger" >
+              Campo obligatorio.
+            </div>
+          </div>
 
-        <div class="mb-3 ml-3">
-          <input type="text" placeholder="Ingrese su nombre..." size="40" id="idname" >
-        </div>
+          <div class="form-group mb-3 ml-3">
+            <label for="dni" class="lead">D.N.I.</label>
+            <input type="text" class="form-control" id="dni" required [(ngModel)]="model.dni" name="dni" #dni="ngModel" placeholder="Ingrese su dni...">
+            <div [hidden]="dni.valid || dni.pristine" class="alert alert-danger" >
+              Campo obligatorio.
+            </div>
+          </div>
 
-        <div class="lead mb-3 ml-3">
-            <h6>Apellido</h6>
-        </div>
+          <div class="form-group mb-3 ml-3">
+            <label for="mail" class="lead">Correo Electrónico</label>
+            <input type="email" class="form-control" id="mail" required [(ngModel)]="model.mail" name="mail" #mail="ngModel" placeholder="Ingrese su correo electrónico...">
+            <div [hidden]="mail.valid || mail.pristine" class="alert alert-danger" >
+              Campo obligatorio.
+            </div>
+          </div>
 
-        <div class="mb-3 ml-3">
-          <input type="text" placeholder="Ingrese su apellido..." size="40" >
-        </div>
+          <div class="form-group mb-3 ml-3">
+            <label for="pass" class="lead">Ingrese su contraseña</label>
+            <input type="password" class="form-control" id="pass" required [(ngModel)]="model.pass" name="pass" #pass="ngModel" placeholder="Ingrese su contraseña...">
+            <div [hidden]="pass.valid || pass.pristine" class="alert alert-danger" >
+              Campo obligatorio.
+            </div>
+          </div>
 
-        <div class="lead mb-3 ml-3">
-            <h6>Fecha de Nacimiento</h6>
-        </div>
+          <div class="form-group mb-3 ml-3">
+            <label for="pass2" class="lead">Repita su contraseña</label>
+            <input type="password" class="form-control" id="pass2" required [(ngModel)]="model.pass2" name="pass2" #pass2="ngModel" placeholder="Vuelva a ingresar su contraseña...">
+            <div [hidden]="pass2.valid || pass2.pristine" class="alert alert-danger" >
+              Campo obligatorio.
+            </div>
+          </div>
+  
 
-        <div class="mb-3 ml-3">
-          
-          <input type="text" placeholder="dd" size="2">/  
-          <input type="text" placeholder="mm"size="2">/
-          <input type="text"placeholder="aaaa" size="4">
-          
-        </div>
+          <button type="submit" class="btn btn-inf btn-sm ml-3" [disabled]="!submitBand.form.valid">Registrarse</button>
 
-        <div class="lead mb-3 ml-3">
-            <h6>DNI</h6>
-        </div>
+        </form>
 
-        <div class="mb-3 ml-3">
-            <input type="text" placeholder="Ingrese su DNI (sin puntos)..." size="40" >
-        </div>
-
-        <div class="lead mb-3 ml-3">
-            <h6>Corre Electrónico</h6>
-        </div>
-
-        <div class="mb-3 ml-3">
-            <input type="text"  placeholder="Ingrese su Correo Electrónico..."size="40" >
-        </div>
-
-        <div class="lead mb-3 ml-3">
-          <h6>Contraseña</h6>
-        </div>
-
-        <div class="mb-3 ml-3">
-          <input type="password" placeholder="Ingrese su contraseña..." size="40">
-        </div>
-
-        <div class="lead mb-3 ml-3">
-            <h6>Repetir Contraseña</h6>
-        </div>
-
-        <div class="mb-3 ml-3">
-            <input type="password" placeholder="Vuelva a ingresar su contraseña..." size="40">
-        </div>
-
-        <a class="btn btn-inf btn-sm ml-3" href=""> REGISTRARSE</a>
-
-        <br>
-        <br>
-        <br>
-
-      </form>
-
+      </div>
 
     </div>
 
-    <div class="col-6"><img class="img-fluid" src="assets\logo_inicio.PNG"></div>
-
-
+    <div class="col-6">
+        <img class="img-fluid" src="assets\logo_inicio.PNG">
+    </div>
 
   </div>
-
-
 </div>
-
-

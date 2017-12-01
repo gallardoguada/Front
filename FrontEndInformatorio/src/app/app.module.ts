@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'angular4-carousel';
@@ -16,7 +17,7 @@ import { PaginaComponent } from './pagina/pagina.component';
 import { ContainerComponent } from './container/container.component'
 
 import { BlogService } from './pagina/pagina.service'
-import { FormsModule } from '@angular/forms'
+
 import { HttpModule } from '@angular/http'
 import { CursosComponent } from './cursos/cursos.component'
 import {CursosService} from './cursos/cursos.service';
