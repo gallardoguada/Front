@@ -6,11 +6,11 @@
 </ul>-->
 
 
-<div class="container" class="pt-3">
+<div class="container">
 <div *ngIf="cursoSeleccionado">
   <div class="row">
     <div class="col-12">
-      <div class="card-inf-grey">
+      <div class="card-inf-grey ">
         <div class="card-header-inf bg-inf-blue text-white"><h3>{{cursoSeleccionado.nombre}}</h3></div>
         <div class="card-inf">
         <div class="card-body-inf">
@@ -47,9 +47,15 @@
                                     <div class="col-12">
                                         <p>{{curso.descripcion}}</p>
                                     </div>
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-inf btn-xs" (click) ="verCurso(curso)">VER MÁS</button>
-                                        <button type="button" class="btn btn-inf btn-xs">INSCRIBIRME</button>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 pb-3 pb-md-0">
+                                                <button type="button" class="btn btn-inf btn-xs btn-block" (click) ="verCurso(curso)">VER MÁS</button>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <button type="button" class="btn btn-inf btn-xs btn-block">INSCRIBIRME</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
