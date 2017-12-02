@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import{Registrado} from 'C:/Front/FrontEndInformatorio/src/app/registrado';
+import{Registrado} from '../../../src/app/registrado';
 /*El import{registrado} importa (valga la redundancia) la clase registrado definido en campos.ts*/
 
 @Component({
